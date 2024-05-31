@@ -1,7 +1,6 @@
 # Name : Hunain Khalid
 # This code below is the optimized solution for https://leetcode.com/problems/two-sum/
 # The question requries us to find two numbers that equal the target value
-# TODO: clean up logging and create more modular tests
 
 from typing import List
 import logging
