@@ -23,7 +23,34 @@ class Solution:
             keyValPairs[nums[i]] = i
         
         return []
+    
 
+import unittest
+
+
+class Test(unittest.TestCase):
+    def setUp(self):
+        self.solution = Solution()
+
+    def test_first(self):
+        self.assertEqual(
+            self.solution.twoSum(nums=[2, 7, 11, 15], target=9),
+            [0, 1],
+        )
+    logger.info("Test_first: %s, %s, : %s", 
+                'nums=[2, 7, 11, 15]', 'target=9', 'sol=[0,1]')
+
+    def test_second(self):
+        self.assertEqual(
+            self.solution.twoSum(nums=[3, 2, 4], target=6),
+            [1, 2],
+        )
+    logger.info("Test_second: %s, %s, : %s",
+                 'nums=[3, 2, 4]', 'target=6', 'sol=[1,2]')
+
+if __name__ == "__main__":
+    unittest.main()    
+"""
 class Test1:           
     s = Solution();
     target1:int = 6
@@ -41,7 +68,22 @@ class Test1:
     logger.info("Solution to list 3 are values in locations %s added is %s", s.twoSum(numList3,target1), target1)
 
 
-    
+class TestSum():           
+    def test_pass():
+       
+        numList1:List[int] = [2,7,11,15]
+        
+
+        assert Solution.twoSum(numList1,9) == 9
+        logger.info("List1 contains %s and target [%s] ", numList1, 9)
+
+    def test_fail():
+       
+        numList1:List[int] = [3,2,5,4]
+
+        assert Solution.twoSum(numList1,9) == 100
+        logger.info("List1 contains %s and target [%s] but no two values could be found", numList1, 9)
+"""
 
 
 
