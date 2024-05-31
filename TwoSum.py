@@ -50,40 +50,6 @@ class Test(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()    
-"""
-class Test1:           
-    s = Solution();
-    target1:int = 6
-    target2:int = 9
-    numList1:List[int] = [2,7,11,15]
-    numList2:List[int] = [3,2,5,4]
-    numList3:List[int] = [3,3,6]
-
-    logger.info("List1 contains %s and target [%s] ", numList1, target2)
-    logger.info("List2 contains %s and target [%s] ", numList2, target1)
-    logger.info("List3 contains %s and target [%s] ", numList3, target1)
-    
-    logger.info("Solution to list 1 are values in locations %s added is %s", s.twoSum(numList1,target2), target2)
-    logger.info("Solution to list 2 are values in locations %s added is %s", s.twoSum(numList2,target1), target1)
-    logger.info("Solution to list 3 are values in locations %s added is %s", s.twoSum(numList3,target1), target1)
-
-
-class TestSum():           
-    def test_pass():
-       
-        numList1:List[int] = [2,7,11,15]
-        
-
-        assert Solution.twoSum(numList1,9) == 9
-        logger.info("List1 contains %s and target [%s] ", numList1, 9)
-
-    def test_fail():
-       
-        numList1:List[int] = [3,2,5,4]
-
-        assert Solution.twoSum(numList1,9) == 100
-        logger.info("List1 contains %s and target [%s] but no two values could be found", numList1, 9)
-"""
 
 
 
